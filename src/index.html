@@ -1,0 +1,677 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href="./dist/output.css" rel="stylesheet"> <!-- Desde carpeta local -->
+    <link href="../dist/output.css" rel="stylesheet"> <!-- Descomprimir desde Github -->
+
+
+    <title> Enecuatro </title>
+
+
+
+
+</head>
+
+<body class="bg-slate-100">
+
+    <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
+
+    <nav class="flex items-center justify-between flex-wrap bg-zinc-900 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a href="#banner" class="flex items-start">
+                <img src="./img/logo.png" alt="">
+                <img src="./img/logo2.png" alt="">
+            </a>
+        </div>
+        <div class="block lg:hidden">
+            <button id="boton"
+                class="flex items-center px-3 py-2 border rounded text-stone-400 border-stone-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="w-full  flex-grow-reverse  hidden lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow uppercase sm:mt-0  ">
+
+                <a href="#banner"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-stone-400 hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    homeen4 </a>
+                <a href="#nosotros"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-stone-400 hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    nosotros
+                </a>
+                <a href="#experiencia"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-stone-400 hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    recursos y experiencia
+                </a>
+                <a href="#mision"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-stone-400 hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    mision
+                </a>
+                <a href="#vision"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-stone-400 hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    vision
+                </a>
+                <a href="#proyectos"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-stone-400 hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    proyectos
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-------------------------------FIN NAVBAR  ---------------------------------------------->
+
+
+    <!---------------------------------------- inicio banner  ----------------------------------------------->
+
+
+    <div id="banner" class=" p-10 bg-no-repeat bg-cover " style="background-image: url(./img/banner.png);">
+        <div class="flex flex-wrap  md:grid md:grid-cols-2 md:mx-auto lg:my-32 max-w-7xl ">
+            <div
+                class="flex flex-wrap mb-5 md:my-auto md:mx-auto  text-white uppercase font-semibold text-3xl 2xl:text-4xl">
+                <h5 class="tracking-widest	"> arquitectura y <br> construccion somos <br> enecuatro </h5>
+            </div>
+
+            <div class=" md:mx-auto">
+                <div class="max-w-xs  p-6   bg-slate-50 ">
+                    <form>
+                        <div class="text-center font-bold uppercase mb-5 ">
+                            <h3 class=""> Contactate con nosotros <br> Te respondemos a la brevedad</h3>
+                        </div>
+                        <div class="form-group mb-6">
+                            <input type="text"
+                                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300  transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                id="exampleInput7" placeholder="Nombre">
+                        </div>
+                        <div class="form-group mb-6">
+                            <input type="tel"
+                                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300  transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                id="exampleInput8" placeholder="Telefono">
+                        </div>
+
+                        <button type="submit"
+                            class=" w-full px-6 py-2.5 bg-stone-800 text-white font-medium text-xs leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Quiero
+                            que me llamen</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!---------------------------------------- Fin bannerr   ----------------------------------------------->
+
+
+
+
+    <!---------------------------------------- Inicio Nosotros  ----------------------------------------------->
+
+    <section id="nosotros" class="max-w-6xl mx-auto mt-5 lg:mt-16
+         lg:grid lg:grid-cols-2 lg:justify-center  ">
+
+        <!----------------------------------------  Carrousel   ----------------------------------------------->
+        <div class="max-w-sm  mx-auto my-5
+        lg:max-w-xl">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Images -->
+                <div class="mySlides">
+                    <img src="./img/galeria3.png" class="w-full h-full bg-cover ">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/galeria2.png" class="w-full h-full bg-cover ">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/galeria1.png" class="w-full h-full bg-cover ">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+
+        <!---------------------------------------- Fin  Carrousel   ----------------------------------------------->
+
+        <!-- texto 1  -->
+        <div class="
+           lg:max-w-xl px-5 space-y-3 ">
+            <h1 class="font-black text-3xl tracking-widest uppercase "> nosotros</h1>
+            <img src="./img/flechaNegra.png" class="" alt="">
+
+            <p>Somos un equipo de expertos en <b>arquitectura y construcción</b>, dedicado a
+                diseñar y
+                crear
+                espaciosadaptadosa las necesidades de cada uno de nuestros clientes y al entorno.</p>
+            <p>Encaramos cada proyecto con gran compromiso sin importar el tamaño o el presupuesto
+                del
+                mismo, porque si
+                algo nos
+                caracteriza es la transparencia y entrega.</p>
+            <p> <b>Ideamos, diseñamos, construimos y gestionamos</b> </p>
+            <p> Desarrollamos proyectos innovadores que acogen la visión emprendedora de nuestros
+                <b>clientes
+                    corporativos </b>,
+                diseñamos
+                <b>viviendas</b> atendiendo a cada detalle para transformar cada una de ellas en un hogar,
+                construimos
+                <b>edificios </b>
+                innovadores y
+                sustentables que aporten valor al entorno,y gestionamos <b>bienes raíces</b>. Trabajamos
+                con
+                responsabilidad
+                aportando
+                nuestra experiencia y talento a todo lo que hacemos.
+            </p>
+        </div>
+
+        <!-- texto 2  -->
+
+        <div class="
+        lg:max-w-xl space-y-3 px-5 mt-10 lg:mt-10">
+            <h1 class="pt-10 md:pt-0  uppercase text-1xl font-bold underline "> Es importante conocer de
+                dónde
+                venimos para
+                entender cómo
+                nos proyectamos hacia el futuro. </h1>
+            <p class=""> <b>ENECUATRO</b> surgió para crear espacios corporativos integrales que pudieran
+                satisfacer
+                las necesidades de nuestros
+                clientes, y para ello pusimos <b>cabeza, cuerpo y la fuerza</b> necesaria en pro de llevar
+                adelante
+                nuestra
+                empresa
+                y ayudar
+                con cada proyecto a nuestros clientes a lograr lo mismo. </p>
+            <p> Con el tiempo nos dimos cuenta de que nuestra parte <b>creativa</b> ha sido parte
+                fundamental de
+                cada
+                construcción, y después
+                de una larga trayectoria sacamos a relucir el <b>corazón y la conciencia</b> con la que
+                realizamos
+                nuestra
+                tarea,
+                es por eso
+                que unimos nuestra pasión por la construcción al diseño creativo, que nos permite crear
+                espacios
+                de
+                trabajo
+                funcionales, hogares, desarrollos inmobiliarios completos y transformar el entorno de manera
+                eficiente y
+                sustentable. </p>
+            <p> El compromiso y transparencia que tenemos con cada uno de nuestros clientes nos avala y es
+                algo de
+                lo
+                que
+                nos sentimos
+                orgullosos. </p>
+            <p>
+                Nos reinventamos para diseñar y construir sueños.
+                <br>
+            <p class="flex flex-wrap font-bold  ">Somos Arquitectos y Constructores. </p>
+            </p>
+            <div class="flex flex-wrap ">
+                <button type="button"
+                    class=" w-full max-w-xs
+                    mt-3  px-16 py-2
+                    italic 2 border-2 font-medium border-zinc-500 uppercase  hover:bg-black hover:bg-opacity-10 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    contacto</button>
+            </div>
+        </div>
+
+        <!-- imagen 2  -->
+
+        <div class="
+        lg:max-w-xl lg:mt-10">
+            <img class="my-5 mx-auto xs:max-w-[200spx] max-w-sm lg:order-last" src="./img/nosotros2.png" alt="">
+        </div>
+    </section>
+
+    <!---------------------------------------- Fin Nosotros   ----------------------------------------------->
+
+
+    <!---------------------------------------- inicio EXPERIENCIA   ----------------------------------------------->
+
+
+    <div id="experiencia" class="mt-10 text-center px-5 lg:px-20 pb-20 lg:pb-40   text-white w-full" style="background-image:
+        url('./img/experiencia.png');">
+
+        <!--   Circulo y flecha        -->
+        <!-- <div class="flex justify-center">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full  ">
+                <img src="./img/flecha.png" alt="">
+            </div>
+        </div> -->
+        <div class="flex justify-center pt-10 sm:mt-10 lg:mt-30">
+            <img src="./img/experienciarectangulo.png" alt="">
+        </div>
+
+        <h1 class=" uppercase  text-lg font-bold sm:text-3xl lg:text-5xl mt-5"> amplia experiencia en el
+            rubro </h1>
+        <p id="" class="text-sm md:text-lg lg:text-2xl my-5">
+
+            Ejecutamos nuestros proyectos de forma organizada aplicando todos nuestros <br> conocimientos para
+            satisfacer las necesidades de cada cliente.</p>
+    </div>
+
+
+    <div class="bg-slate-100 p-3 sm:p-5 ">
+        <div class="-mt-16 sm:-mt-10 ">
+            <div id="mision"
+                class="max-w-4xl mx-auto bg-white p-8 lg:p-10  border rounded-sm md:grid md:grid-cols-5 shadow-2xl  ">
+                <h2
+                    class="col-span-1 uppercase font-semibold grid content-center text-md  text-center mb-3 md:text-3xl ">
+                    mision</h2>
+
+                <p class="col-span-4 text-center xs:text-left text-sm md:text-lg  "> Creamos espacios
+                    creativos y
+                    confortables, con esencia y conciencia que satisfacen las necesidades de nuestros clientes. Ponemos
+                    nuestra experiencia y profesionalidad al servicio de cada proyecto. Construimos relaciones de
+                    calidad y confianza, acompañando a nuestros clientes a hacer realidad sus ilusiones.</p>
+            </div>
+            <div id="vision"
+                class="max-w-4xl mx-auto  bg-white p-8 lg:p-10  border rounded-sm md:grid md:grid-cols-5 shadow-2xl my-5  ">
+                <h2
+                    class="col-span-1   uppercase font-semibold grid content-center text-md  text-center mb-3 md:text-3xl">
+                    vision
+                </h2>
+                <p class="col-span-4 text-center xs:text-left text-sm md:text-lg "> El compromiso y
+                    transparencia que
+                    tenemos con cada uno de nuestros clientes nos avala y es algo de lo que nos sentimos
+                    orgullosos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------------------- Fin EXPERIENCIA  ----------------------------------------------->
+
+
+
+    <!----------------------------------------  Proyectos   ----------------------------------------------->
+
+
+    <section class="bg-gray-200 py-10">
+        <h1 id="proyectos" class=" uppercase font-black text-center my-10 text-3xl lg:text-5xl">
+            proyectos</h1>
+
+        <div class="proyectos flex flex-wrap  justify-center gap-y-5  max-w-5xl mx-auto
+    lg:justify-between lg:gap-x-0 lg:gap-y-0
+   
+    ">
+
+
+            <div class=" max-w-xs shadow-lg bg-white ">
+                <a href="#!">
+                    <img class="w-full " src="./img/proyecto3.png" alt="" />
+                </a>
+                <div class="justify-center items-center text-center p-5 ">
+                    <h5 class="my-2 xs:text-base lg:text-xl font-black italic">Sala de descanso <br> Mercado Libre</h5>
+                    <img src="./img/proyecto_linea.png" class="mx-auto my-auto" alt="">
+                    <div class="my-3">
+                        <p class="">
+                            Tipo de Proyecto: <br> Ambientes de trabajo
+                        </p>
+                        <p>
+                            Cliente: Mercado Libre
+                        </p>
+                    </div>
+                    <div class="">
+                        <button id="buttonMercadoLibre" type="button"
+                            class=" my-2 inline-block py-2 w-full text-xs italic lg:text-sm bg-white text-slate-800 border border-slate-800 font-medium leading-tight uppercase  shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-slate-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black active:text-white active:shadow-lg transition duration-150 ease-in-out">ver
+                            proyecto</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" max-w-xs shadow-lg bg-white ">
+                <a href="#!">
+                    <img class="w-full" src="./img/proyecto2.png" alt="" />
+                </a>
+                <div class="justify-center items-center text-center p-5 ">
+                    <h5 class="my-2 xs:text-base lg:text-xl font-black italic"> Oficinas Corporativas <br> Prudential
+                    </h5>
+                    <img src="./img/proyecto_linea.png" class="mx-auto my-auto" alt="">
+                    <div class="my-3">
+                        <p class="">
+                            Tipo de Proyecto: <br> Oficinas Corporativas
+                        </p>
+                        <p>
+                            Cliente: Prudential
+                        </p>
+                    </div>
+                    <div>
+                        <button id="buttonPrudential" type="button"
+                            class=" my-2 inline-block py-2 w-full text-xs italic lg:text-sm bg-white text-slate-800 border border-slate-800 font-medium leading-tight uppercase  shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-slate-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black active:text-white active:shadow-lg transition duration-150 ease-in-out">ver
+                            proyecto</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="max-w-xs shadow-lg bg-white ">
+                <a href="#!">
+                    <img class="w-full" src="./img/proyectos1.png" alt="" />
+                </a>
+                <div class="justify-center items-center text-center p-5 ">
+                    <h5 class="my-2 xs:text-base lg:text-xl font-black italic">Oficinas Corporativas <br> Vitality
+                        Argentina
+                    </h5>
+                    <img src="./img/proyecto_linea.png" class="mx-auto my-auto" alt="">
+                    <div class="my-3">
+                        <p class="">
+                            Tipo de Proyecto: <br> Oficinas Corporativas
+                        </p>
+                        <p>
+                            Cliente: Vitality Argentina
+                        </p>
+                    </div>
+                    <div>
+                        <button id="buttonVitality" type="button"
+                            class=" my-2 inline-block py-2 w-full text-xs italic lg:text-sm bg-white text-slate-800 border border-slate-800 font-medium leading-tight uppercase  shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-slate-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black active:text-white active:shadow-lg transition duration-150 ease-in-out">ver
+                            proyecto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!----------------------------------------  Proyectos   ----------------------------------------------->
+
+    <!----------------------------------------  Modal Proyectos   ----------------------------------------------->
+
+    <!-- Modal MercadoLibre -->
+    <div id="modalMercadoLibre" class="modal">
+
+        <!-- The Close Button -->
+        <button id="closeMercadoLibre" class="close">&times;</button>
+
+        <!-- Modal Content  -->
+        <div class="modal-content  text-white p-10 bg-zinc-900 mx-auto text-sm max-w-xl lg:max-w-3xl">
+            <div class="max-w-md  mx-auto my-5
+                        lg:max-w-xl">
+
+                <img src="./img/mercadoLibre1.png" alt="">
+
+                <h3 class="font-bold my-3 text-lg italic"> Sala de descanso Mercado Libre </h3>
+
+                <div class="flex flex-col space-y-2 md:grid md:grid-cols-2 md:space-y-0 md:grid-y-4  ">
+                    <p class="">Tipo de Contrato: Proyecto y Construccion Llave en Mano.</p>
+                    <p class="">Tipo de Proyecto: Ambientes de trabajo</p>
+                    <p class="">Cliente Mercado Libre</p>
+                    <p class="">Superficie: 200M°</p>
+                    <p class="">Año: 2020</p>
+                    <p class="">Lugar: Centro de distribución CAD, Villa Madero</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal Prudential -->
+    <div id="modalPrudential" class="modal">
+
+        <!-- The Close Button -->
+        <button class="close" id="closePrudential">&times;</button>
+
+        <!-- Modal Content  -->
+        <div class="modal-content  text-white p-10 bg-zinc-900 mx-auto text-sm max-w-xl lg:max-w-3xl">
+            <div class="max-w-md  mx-auto my-5
+                            lg:max-w-xl">
+
+                <img src="./img/proyecto2.png" class="flex mx-auto" alt="">
+
+                <h3 class="font-bold my-3 text-lg italic"> Sala de descanso Prudential </h3>
+
+                <div class="flex flex-col space-y-2 md:grid md:grid-cols-2 md:space-y-0 md:grid-y-4  ">
+                    <p class="">Tipo de Contrato: Proyecto y Construccion Llave en Mano.</p>
+                    <p class="">Tipo de Proyecto: Ambientes de trabajo</p>
+                    <p class="">Cliente Mercado Libre</p>
+                    <p class="">Superficie: 200M°</p>
+                    <p class="">Año: 2020</p>
+                    <p class="">Lugar: Centro de distribución CAD, Villa Madero</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- modalVitality -->
+    <div id="modalVitality" class="modal">
+
+        <!-- The Close Button -->
+        <button class="close" id="closeVitality">&times;</button>
+
+        <!-- Modal Content  -->
+        <div class="modal-content   text-white p-10 bg-zinc-900 mx-auto text-sm max-w-xl lg:max-w-3xl">
+            <div class="max-w-md  mx-auto my-5
+                            lg:max-w-xl">
+
+                <img src="./img/proyectos1.png" class="flex mx-auto" alt="">
+
+                <h3 class="font-bold my-3 text-lg italic"> Sala de descanso Vitality </h3>
+
+                <div class="flex flex-col space-y-2 md:grid md:grid-cols-2 md:space-y-0 md:grid-y-4  ">
+                    <p class="">Tipo de Contrato: Proyecto y Construccion Llave en Mano.</p>
+                    <p class="">Tipo de Proyecto: Ambientes de trabajo</p>
+                    <p class="">Cliente Mercado Libre</p>
+                    <p class="">Superficie: 200M°</p>
+                    <p class="">Año: 2020</p>
+                    <p class="">Lugar: Centro de distribución CAD, Villa Madero</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!----------------------------------------  inicio Galeria    ----------------------------------------------->
+    <div class=" bg-zinc-900 pt-5 pb-16">
+
+        <h1 class="font-black  text-4xl uppercase text-center text-white py-5 "> galeria</h1>
+
+
+
+        <div class="slider px-5 flex space-x-6 snap-x snap-mandatory overflow-x-auto   max-w-5xl mx-auto ">
+
+            <img src="./img/flechaIzquierda.png" class=" h-10 cursor-pointer my-auto mx-auto" alt="">
+
+            <img class="snap-always " src="./img/galeria1.png" alt="">
+            <img class="snap-always " src="./img/galeria2.png" alt="">
+            <img class="snap-always " src="./img/galeria3.png" alt="">
+            <img class="snap-always " src="./img/galeria1.png" alt="">
+            <img class="snap-always " src="./img/galeria2.png" alt="">
+            <img class="snap-always " src="./img/galeria3.png" alt="">
+
+            <img src="./img/flechaDerecha.png" class="h-10 cursor-pointer my-auto" alt="">
+
+        </div>
+
+
+
+
+    </div>
+
+    <!---------------------------------------- Fin Galeria  ----------------------------------------------->
+
+
+    <!---------------------------------------- Google Maps   ----------------------------------------------->
+    <div id="map" class="h-96 w-full"></div>
+
+    <!----------------------------------------  Google Maps ----------------------------------------------->
+
+    <!---------------------------------------- Inicio Contacto  ----------------------------------------------->
+    <div class="text-white bg-zinc-900 ">
+
+        <div class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
+            <div class=" capitalize flex-row  mx-2 mt-5 sm:mx-10  sm:mt-5 ">
+                <h1 class="uppercase text-2xl p-3">contacto</h1>
+
+                <ul class="mt-5 space-y-5">
+                    <li class="">
+                        <p class="underline">teléfono:</p>
+                        <p>+549 11 2647-0529</p>
+                    </li>
+                    <li class="">
+                        <p class="underline"> horarios de atención: </p>
+                        <p> de lunes a viernes 9:00 a 18:00</p>
+                    </li>
+                    <li class="">
+                        <p class="underline  "> Email: </p>
+                        <p class="lowercase"> comercial@enecuatro.com</p>
+                    </li>
+                    <div class="">
+                        <li class="flex space-x-8 justify-center ">
+                            <img src="./img/contacto1.png" alt="">
+                            <img src="./img/contacto2.png" alt="">
+                            <img src="./img/contacto1.png" alt="">
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <form action="submit">
+                <div class="grid grid-rows-5 gap-4 mt-5 mx-3 sm:mr-10 md:mr-20">
+                    <input type="text" placeholder="Nombre" class="p-4 py-3  w-full border rounded-sm">
+                    <input type="text" placeholder="Email" class="p-4 py-3 w-full  border rounded-sm">
+                    <input type="text" placeholder="Empresa" class="p-4 py-3 w-full border rounded-sm">
+                    <input type="text" placeholder="Mensaje" class="p-4 py-3 w-full border rounded-sm row-span-2">
+
+                </div>
+                <div class="flex justify-center sm:justify-start">
+                    <button type="button"
+                        class="sm:ml-3 hover:bg-white hover:text-zinc-900 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+                        enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!---------------------------------------- Fin Contacto  ----------------------------------------------->
+    <!---------------------------------------- Footer  ----------------------------------------------->
+
+    <footer class="max-w-[1500px] mx-auto">
+
+        <div class="flex justify-evenly my-10">
+            <div class="my-auto">
+                <a href="#" class="flex items-start ">
+                    <img class="" src="./img/logo.png" alt="">
+                    <img src="./img/logo2.png" alt="">
+                </a>
+            </div>
+
+            <div class="">
+                <ul class="text-right">
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#experiencia">Recursos y Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#mision">Mision - Vision </a>
+                    </li>
+                    <li>
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- <div class="sm:pt-36 text-xs sm:text-sm lg:text-xl"> -->
+        <!-- text-center mt-5 sm:pt-36 sm:mt-0 text-xs sm:text-sm lg:text-base -->
+        <div class="text-center">
+            <p>Copyright 2022 www.enecuatro.com</p>
+        </div>
+
+    </footer>
+
+
+
+    <!---------------------------------------- Footer  ----------------------------------------------->
+
+
+
+
+    <!-- script  -->
+    <script src="app.js"></script>
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="./index.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '320px',
+
+                    'sm': '550px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '749px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+                extend: {
+                    fontFamily: {
+                        'shadows': 'Shadows Into Light'
+                    }
+                },
+            },
+            plugins: [
+                require('tw-elements/dist/plugin')
+            ]
+
+        }
+    </script>
+
+    <!-- script  -->
+</body>
+
+</html>
